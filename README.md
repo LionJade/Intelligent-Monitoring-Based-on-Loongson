@@ -1,8 +1,10 @@
 # Intelligent-Monitoring-Based-on-Loongson
 2025 Embedded Competition Project
 
+
 ## Overview
 This project is an intelligent monitoring system based on the Loongson 2K1000LA architecture, designed for industrial security and production process monitoring. The system integrates sensors like cameras and microphones, with the Loongson processor handling video and audio data collection and processing. It includes both edge and cloud-based intelligence for industrial scenarios, offering facial recognition, object motion detection, and production flow monitoring.
+
 
 ## Features
 - **Real-time Monitoring**: Supports live video/audio streaming and recording.
@@ -11,7 +13,8 @@ This project is an intelligent monitoring system based on the Loongson 2K1000LA 
 - **Industrial Process Monitoring**: Monitors production efficiency and safety.
 - **PC Client**: Manages devices, displays real-time and historical data, and supports face template management.
 - **Flexible Device Management**: Add, remove, and bind devices to the system with ease.
-  
+
+
 ## System Requirements
 
 ### Device-Side Requirements:
@@ -41,26 +44,28 @@ pip install opencv-python==3.2.0 numpy~=1.21.6 PyAudio>=0.2.11
 - **Network**  
   A stable local network to connect the device (Loongson board) and the client PC.
 
+
 ## Installation
 1. Clone the repository or download the project files to your local machine.
 
 2. Install the required Python dependencies:
-  ```bash
-  pip install opencv-python==3.2.0 numpy~=1.21.6 PyAudio>=0.2.11
-  ```
+   ```bash
+   pip install opencv-python==3.2.0 numpy~=1.21.6 PyAudio>=0.2.11
+   ```
   
 3. Configure the device and PC client settings (e.g., IP addresses, ports).
 
 4. Run the PC client to start the application:
-  ```bash
-  python3 client_new7.py
-  ```
+   ```bash
+   python3 client_new7.py
+   ```
 
 5. On the device (Loongson board), run the device-side program to start video/audio streaming and object detection:
    ```bash
    python3 faceDetectv7.1.py
    ```
-   
+
+
 ## Usage
 
 1. **Start Video Stream**: 
@@ -77,6 +82,7 @@ pip install opencv-python==3.2.0 numpy~=1.21.6 PyAudio>=0.2.11
 4. **View Historical Data**:
    - View previously recorded video and other data by selecting **View History**.
 
+
 ## Application Areas
 This system is designed for industrial environments, and it can be applied in various sectors:
 - **Factory Production Lines**: Real-time monitoring of personnel, products, and process flow.
@@ -84,8 +90,10 @@ This system is designed for industrial environments, and it can be applied in va
 - **Industrial Warehouses**: Object tracking and inventory management.
 - **Chemical Plants**: Monitoring critical safety parameters and process control.
 
+
 ## License
 This project is open-source and available under the MIT License.
+
 
 ## Acknowledgements
 - Thanks to the development team and resources provided by the **Loongson** ecosystem.
